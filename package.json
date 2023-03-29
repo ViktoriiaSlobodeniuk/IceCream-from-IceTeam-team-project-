@@ -5,7 +5,7 @@
   "homepage": "https://ViktoriiaSlobodeniuk.github.io/IceCream-from-IceTeam-team-project-",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /IceTeam/"
+    "build": "parcel build src/*.html --public-url /IceCream-from-IceTeam-team-project-/"
   },
   "repository": {
     "type": "git",
