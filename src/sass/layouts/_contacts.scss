@@ -1,0 +1,214 @@
+.contacts__section {
+  padding-bottom: 40px;
+  background: linear-gradient(transparent 25%, var(--main-bg-cl) 25%);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background: linear-gradient(transparent 45%, var(--main-bg-cl) 45%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+    background: linear-gradient(transparent 13%, var(--main-bg-cl) 13%);
+  }
+}
+
+.contacts__list {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    gap: 16px;
+    flex-basis: calc((100% - 32px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 64px;
+    gap: 32px;
+  }
+}
+
+.contacts__item {
+  font-weight: 500;
+  line-height: calc(22 / 12);
+  color: var(--dark-txt-cl);
+
+  background-color: var(--main-txt-cl);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+
+    padding: 40px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    padding: 40px;
+  }
+}
+.contacts-group {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 176px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 288px;
+  }
+}
+.contacts__place {
+  display: inline-block;
+  background-color: var(--accent-txt-cl);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 80px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    margin-bottom: 32px;
+  }
+}
+.contacts__place--foodtruck {
+  width: 130px;
+}
+.address {
+  font-style: normal;
+
+  border-bottom: 1px solid var(--light-grey-cl);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+.address__city {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 12px;
+  }
+}
+.address__link {
+  color: var(--brown-cl);
+}
+.work-time__list {
+  border-bottom: 1px solid var(--light-grey-cl);
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+}
+.work-time__item:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
+}
+.work-time__hours {
+  color: var(--gray-txt-cl);
+}
+.contacts-box__item {
+  line-height: calc(18 / 12);
+}
+
+.contacts__buttons {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+.contacts__btn {
+  width: 196px;
+  height: 42px;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  color: var(--dark-txt-cl);
+  border-radius: 10px;
+
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+}
+.contacts__btn--locations {
+  background-color: var(--accent-txt-cl);
+  border: none;
+
+  transition: background-color var(--anim), color var(--anim);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+.contacts__btn--locations:hover {
+  background: var(--bg-green-cl);
+}
+.contacts__btn--locations:focus {
+  background: var(--bg-green-cl);
+  color: var(--main-txt-cl);
+}
+
+.contacts__btn--franchise {
+  background-color: transparent;
+  border: 2px solid var(--accent-txt-cl);
+
+  transition: border var(--anim), color var(--anim);
+}
+.contacts__btn--franchise:hover {
+  border: 2px solid var(--bg-green-cl);
+}
+.contacts__btn--franchise:focus {
+  border: 2px solid var(--bg-green-cl);
+  color: var(--main-txt-cl);
+}
+
+.contacts__icon {
+  fill: transparent;
+  stroke: var(--dark-txt-cl);
+
+  transition: stroke var(--anim);
+}
+
+.contacts__btn--locations:focus .contacts__icon,
+.contacts__btn--franchise:focus .contacts__icon {
+  stroke: var(--main-txt-cl);
+}

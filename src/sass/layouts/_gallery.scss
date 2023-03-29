@@ -1,0 +1,27 @@
+.gallery {
+  background: linear-gradient(var(--main-bg-cl), var(--main-bg-cl));
+  background-repeat: no-repeat;
+  background-position-y: -106px;
+
+  @media screen and (min-width: 768px) {
+    background-position-y: -163px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-position-y: -328px;
+  }
+}
+
+.img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 7.4px;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-radius: 24px;
+  }
+}

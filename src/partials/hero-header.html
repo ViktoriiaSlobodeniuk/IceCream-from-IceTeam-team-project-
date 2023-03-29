@@ -1,0 +1,322 @@
+<header class="header">
+  <div class="container header-container">
+    <a href="./index.html" class="logo">
+      <img
+        srcset="
+          ./images/header/mobile-logo-41.png  41w,
+          ./images/header/tablet-logo-48.png  48w,
+          ./images/header/desktop-logo-60.png 60w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, 41px"
+        src="./images/header/mobile-logo-41.png"
+        alt="Logo"
+      />
+    </a>
+    <nav>
+      <ul class="header-list">
+        <li class="header-item">
+          <a class="header-link" href="#">Home</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="./index.html#how-made">How it’s made?</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#products">Our products</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="32" height="32">
+        <use href="./images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <button
+      class="btn-header btn-adaptive js-open-modal"
+      data-modal="1"
+      type="button"
+    >
+      Buy now
+      <svg class="btn-frame" width="14" height="14">
+        <use href="./images/sprite.svg#icon-btn-frame"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Модалка header-->
+  <div class="mobile-container js-menu-container" id="mobile-menu">
+    <button
+      class="mobile-menu-btn js-close-menu"
+      type="button"
+      data-modal-close
+    >
+      <svg width="32" height="32">
+        <use href="./images/sprite.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <a href="./index.html" class="logo">
+      <img
+        class="logo-menu"
+        srcset="
+          ./images/header/mobile-logo-41.png 41w,
+          ./images/header/tablet-logo-48.png 48w
+        "
+        sizes="(min-width: 768px) 48px, 41px"
+        src="./images/header/mobile-logo-41.png"
+        alt="Logo"
+    /></a>
+
+    <ul class="modal-list">
+      <li class="modal-item">
+        <a class="modal-link" href="./index.html">Home</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#how-made">How it’s made?</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#products">Our products</a>
+      </li>
+      <li class="modal-item">
+        <a class="modal-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+
+    <button
+      class="btn-header btn-modal js-open-modal"
+      data-modal="1"
+      type="button"
+    >
+      Buy now
+      <svg class="btn-frame" width="15" height="15">
+        <use href="./images/sprite.svg#icon-btn-frame"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- hero -->
+
+  <section class="section-hero" id="go-up">
+    <div class="container container-hero">
+      <h1 class="hero-title">ice cream made with passion</h1>
+
+      <ul class="hero-list">
+        <li class="hero-item">
+          <a class="hero-link-btn" href="#products">Products</a>
+        </li>
+        <li class="hero-item">
+          <a class="hero-link" href="#how-made">How it’s made?</a>
+        </li>
+      </ul>
+
+      <div class="baner-box">
+        <img
+          class="plate-img"
+          srcset="
+            ./images/hero/nplate-152.png 152w,
+            ./images/hero/nplate-225.png 225w,
+            ./images/hero/nplate-304.png 304w,
+            ./images/hero/nplate-450.png 450w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+          src="./images/hero/nplate-152.png"
+          alt="table with ice cream"
+        />
+        <img
+          class="baner-img"
+          srcset="
+            ./images/hero/plate-152.png 152w,
+            ./images/hero/plate-225.png 225w,
+            ./images/hero/plate-304.png 304w,
+            ./images/hero/plate-450.png 450w
+          "
+          sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px"
+          src="./images/hero/plate-152.png"
+          alt="table with ice cream"
+        />
+
+        <div class="baner-text-box">
+          <p class="baner-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="arrows-link" href="#">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </a>
+          <p class="comment">With us the plate will never be empty !!!</p>
+        </div>
+      </div>
+      <ul class="counter-list">
+        <li class="counter-item">
+          <p class="counter">16</p>
+          <p class="counter-title">cafes</p>
+        </li>
+        <li class="counter-item">
+          <p class="counter">23</p>
+          <p class="counter-title">food trucks</p>
+        </li>
+      </ul>
+
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/dote-1200.png 1x,
+            ./images/hero/dote-2400.png 2x
+          "
+          type="image/png"
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/hero/dote-767.png 1x, ./images/hero/dote-1534.png 2x"
+          type="image/png"
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/hero/dote-328.png 1x, ./images/hero/dote-656.png 2x"
+          type="image/png"
+        />
+        <img
+          class="img-dote"
+          src="./images/hero/dote-328.png"
+          alt="dote"
+          width="328"
+          height="50"
+          loading="lazy"
+        />
+      </picture>
+      <img
+        class="blur"
+        srcset="
+          ./images/hero/main-pic/Blur-168@1x.png 168w,
+          ./images/hero/main-pic/Blur-266@1x.png 266w,
+          ./images/hero/main-pic/Blur-336@2x.png 336w,
+          ./images/hero/main-pic/Blur-447@1x.png 447w,
+          ./images/hero/main-pic/Blur-532@2x.png 532w,
+          ./images/hero/main-pic/Blur-894@2x.png 894w
+        "
+        sizes="(min-width: 1200px) 447px, (min-width: 768px) 266px, (max-width: 767px) 168px"
+        src="./images/hero/main-pic/Blur-168@1x.png"
+        alt="blur"
+      />
+      <div class="pic">
+        <img
+          class="img-icecream"
+          srcset="
+            ./images/hero/main-pic/ice-157.png 157w,
+            ./images/hero/main-pic/ice-257.png 257w,
+            ./images/hero/main-pic/ice-314.png 314w,
+            ./images/hero/main-pic/ice-447.png 447w,
+            ./images/hero/main-pic/ice-514.png 514w,
+            ./images/hero/main-pic/ice-894.png 894w
+          "
+          sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (max-width: 767px) 157px"
+          src="./images/hero/main-pic/ice-157.png"
+          alt="table with ice cream"
+        />
+        <img
+          class="icecream-green"
+          srcset="
+            ./images/hero/main-pic/170-green.png 157w,
+            ./images/hero/main-pic/270-green.png 257w,
+            ./images/hero/main-pic/340-green.png 314w,
+            ./images/hero/main-pic/484-green.png 447w,
+            ./images/hero/main-pic/540-green.png 514w,
+            ./images/hero/main-pic/968-green.png 894w
+          "
+          sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (max-width: 767px) 157px"
+          src="./images/hero/main-pic/170-green.png"
+          alt="smile"
+        />
+        <img
+          class="icecream-pink"
+          srcset="
+            ./images/hero/main-pic/170-pink.png 157w,
+            ./images/hero/main-pic/270-pink.png 257w,
+            ./images/hero/main-pic/340-pink.png 314w,
+            ./images/hero/main-pic/484-pink.png 447w,
+            ./images/hero/main-pic/540-pink.png 514w,
+            ./images/hero/main-pic/968-pink.png 894w
+          "
+          sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (max-width: 767px) 157px"
+          src="./images/hero/main-pic/170-pink.png"
+          alt="smile"
+        />
+
+        <img
+          class="icecream-yellow"
+          srcset="
+            ./images/hero/main-pic/170-yellow.png 157w,
+            ./images/hero/main-pic/270-yellow.png 257w,
+            ./images/hero/main-pic/340-yellow.png 314w,
+            ./images/hero/main-pic/484-yellow.png 447w,
+            ./images/hero/main-pic/540-yellow.png 514w,
+            ./images/hero/main-pic/968-yellow.png 894w
+          "
+          sizes="(min-width: 1200px) 447px, (min-width: 768px) 257px, (max-width: 767px) 157px"
+          src="./images/hero/main-pic/170-yellow.png"
+          alt="smile"
+        />
+      </div>
+    </div>
+    <a class="link-up" href="#go-up">
+      <svg class="arrow-up" width="14" height="14">
+        <use href="./images/sprite.svg#icon-arrow-up"></use>
+      </svg>
+      up
+    </a>
+  </section>
+</main>
+<script>
+  (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+
+    const toggleMenu = () => {
+      const isMenuOpen =
+        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+
+      const scrollLockMethod = !isMenuOpen
+        ? 'disableBodyScroll'
+        : 'enableBodyScroll';
+      bodyScrollLock[scrollLockMethod](document.body);
+    };
+
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
+
+    // Close the mobile menu on wider screens if the device orientation changes
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+      bodyScrollLock.enableBodyScroll(document.body);
+    });
+
+    // При клике на ссылку навигации в мобильном меню закрываем мобильное меню
+    const closeMobileBtn = document.querySelectorAll('.modal-link');
+    closeMobileBtn.forEach(function (item) {
+      item.addEventListener('click', function (e) {
+        const menu = document.querySelector('#mobile-menu');
+        menu.classList.remove('is-open');
+        bodyScrollLock.enableBodyScroll(document.body);
+      });
+    });
+  })();
+</script>

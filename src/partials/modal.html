@@ -1,0 +1,387 @@
+<!-- buy now modal -->
+<div class="modal modal__buy-now container__buy-now" data-modal="1">
+  <div class="container container__buy-now">
+    <svg
+      class="modal__close-icon modal__close-btn js-modal-close"
+      width="20"
+      height="20"
+    >
+      <use href="./images/sprite.svg#icon-close-cross"></use>
+    </svg>
+    <form class="buy-now__form" autocomplete="off">
+      <strong class="buy-now__heading heading">Buy now</strong>
+      <ul class="buy-now__goods-set">
+        <li class="goods-set__item">
+          <label class="goods-set__label">
+            <input
+              class="goods-set__checkbox"
+              name="buy-now-product"
+              value="ice-cream"
+              type="checkbox"
+            />
+            <span class="goods-set__titlebox goods-set__titlebox--green">
+              <span class="goods-set__title">ice cream</span>
+            </span>
+            <span class="thumb">
+              <img
+                class="goods-set__img"
+                srcset="
+                  ./images/modals/ice-cream.webp    130w,
+                  ./images/modals/ice-cream@2x.webp 260w
+                "
+                sizes="132px"
+                src="./images/modals/ice-cream.webp"
+                alt="ice-cream"
+                width="131"
+                height="130"
+              />
+            </span>
+            <span class="ellipse ellipse--green"></span>
+          </label>
+        </li>
+        <li class="goods-set__item">
+          <label class="goods-set__label">
+            <input
+              class="goods-set__checkbox"
+              name="buy-now-product"
+              value="ice-coffee"
+              type="checkbox"
+            />
+            <span class="goods-set__titlebox goods-set__titlebox--yellow">
+              <span class="goods-set__title">ice coffee</span>
+            </span>
+            <span class="thumb">
+              <img
+                srcset="
+                  ./images/modals/ice-coffee.webp    130w,
+                  ./images/modals/ice-coffee@2x.webp 260w
+                "
+                sizes="132px"
+                src="./images/modals/ice-coffee.webp"
+                alt="ice-coffee"
+                width="132"
+                height="138"
+              />
+            </span>
+            <span class="ellipse ellipse--yellow"></span>
+          </label>
+        </li>
+        <li class="goods-set__item">
+          <label class="goods-set__label">
+            <input
+              class="goods-set__checkbox"
+              name="buy-now-product"
+              value="milkshake"
+              type="checkbox"
+            />
+            <span class="goods-set__titlebox goods-set__titlebox--brown">
+              <span class="goods-set__title">milkshake</span>
+            </span>
+            <span class="thumb">
+              <img
+                srcset="
+                  ./images/modals/milkshake.webp    130w,
+                  ./images/modals/milkshake@2x.webp 260w
+                "
+                sizes="132px"
+                src="./images/modals/milkshake.webp"
+                alt="milkshake"
+                width="132"
+                height="138"
+              />
+            </span>
+            <span class="ellipse ellipse--brown"></span>
+          </label>
+        </li>
+      </ul>
+
+      <label class="buy-now__label">
+        <input
+          class="buy-now__input"
+          type="text"
+          required
+          name="buy-now-name"
+          placeholder="Name"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="buy-now__label">
+        <input
+          class="buy-now__input"
+          type="tel"
+          required
+          name="buy-now-phone"
+          placeholder="Phone"
+          pattern="\+?[0-9\s\-\(\)]+"
+          title="Userphone must include [0-9] numbers."
+        />
+      </label>
+      <label class="buy-now__label buy-now__label--mb">
+        <textarea
+          class="buy-now__comment"
+          name="buy-now-comment"
+          rows="7"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="buy-now__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- ingradients modal -->
+<div class="modal modal__ingradients" data-modal="2">
+  <div class="container container__ingradients">
+    <svg
+      class="modal__close-icon modal__close-btn js-modal-close"
+      width="20"
+      height="20"
+    >
+      <use href="./images/sprite.svg#icon-close-cross"></use>
+    </svg>
+    <form class="ingradients__form">
+      <strong class="ingradients__heading heading">Chololate icecream</strong>
+      <div class="ingradients__imgbox">
+        <div class="ingradients__thumb">
+          <img
+            class="ingradients__img"
+            srcset="
+              ./images/modals/choco.jpg    130w,
+              ./images/modals/choco@2x.jpg 260w
+            "
+            sizes="130px"
+            src="./images/modals/choco.jpg"
+            alt="chocolate icecream"
+            width="131"
+            height="130"
+          />
+        </div>
+        <div class="ingradients__ellipse ellipse--green"></div>
+      </div>
+
+      <ul class="composition">
+        <li class="composition__item">
+          <p class="composition__value">320</p>
+          <p class="composition__itembox">
+            <span class="composition__title"> kcal</span>
+          </p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__value">4g</p>
+          <p class="composition__itembox">
+            <span class="composition__title">Prote...</span>
+          </p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__value">8,2g</p>
+          <p class="composition__itembox">
+            <span class="composition__title">Fats</span>
+          </p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__value">40,4g</p>
+          <p class="composition__itembox">
+            <span class="composition__title">Carbs</span>
+          </p>
+        </li>
+      </ul>
+      <p class="ingradients__title">Ingredients</p>
+      <ul class="ingradients__list">
+        <li class="ingradients__item">
+          <p class="ingradients__name">Milk</p>
+          <p class="ingradients__value">100ml</p>
+        </li>
+        <li class="ingradients__item">
+          <p class="ingradients__name">Belgian chocolate</p>
+          <p class="ingradients__value">20g</p>
+        </li>
+        <li class="ingradients__item">
+          <p class="ingradients__name">Cream</p>
+          <p class="ingradients__value">150 ml</p>
+        </li>
+        <li class="ingradients__item">
+          <p class="ingradients__name">Cocoa powder</p>
+          <p class="ingradients__value">30g</p>
+        </li>
+        <li class="ingradients__item">
+          <p class="ingradients__name">Sugar</p>
+          <p class="ingradients__value">40g</p>
+        </li>
+        <li class="ingradients__item">
+          <p class="ingradients__name">Vanilla sugar</p>
+          <p class="ingradients__value">10g</p>
+        </li>
+      </ul>
+      <label class="ingradients__label">
+        <input
+          class="ingradients__input"
+          type="text"
+          required
+          name="ingradients-name "
+          placeholder="Name"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="ingradients__label">
+        <input
+          class="ingradients__input"
+          type="tel"
+          required
+          name="ingradients-phone"
+          placeholder="Phone"
+          pattern="\+?[0-9\s\-\(\)]+"
+          title="Userphone must include [0-9] numbers."
+        />
+      </label>
+      <label class="ingradients__label ingradients__label--mb">
+        <textarea
+          class="buy-now__comment"
+          name="buy-now-comment"
+          rows="7"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="ingradients__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<!-- read more modal -->
+<div class="modal modal__read-more" data-modal="3">
+  <div class="container read-more__container">
+    <svg
+      class="modal__close-icon modal__close-btn js-modal-close"
+      width="20"
+      height="20"
+    >
+      <use href="./images/sprite.svg#icon-close-cross"></use>
+    </svg>
+    <strong class="read-more__heading heading">How it’s made?</strong>
+    <iframe
+      class="read-more__iframe"
+      width="1111"
+      height="700"
+      src="https://www.youtube.com/embed/jHuGLNlET3o"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p class="read-more__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
+  </div>
+</div>
+<!-- map -->
+<div class="modal-container modal modal__map" data-modal="4">
+  <div class="container map__container">
+    <svg
+      class="modal__close-icon modal__close-btn js-modal-close"
+      width="20"
+      height="20"
+    >
+      <use href="./images/sprite.svg#icon-close-cross"></use>
+    </svg>
+    <strong class="map__heading heading">Our Locations</strong>
+
+    <picture>
+      <!-- Desktop- Tabletscreen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="./images/modals/map.jpg 1x, ./images/modals/map@2x.jpg 2x"
+        type="image/jpg"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./images/modals/map-mobile.jpg    1x,
+          ./images/modals/map-mobile@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        src="./images/modals/map-mobile.jpg"
+        alt="map"
+        width="448"
+        loading="lazy"
+      />
+    </picture>
+
+    <a
+      class="map-link"
+      href="https://goo.gl/maps/qcuRc1VZR8vxFu4n7"
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      >Open map</a
+    >
+  </div>
+</div>
+<!-- Franchise modal -->
+<div class="modal modal__franchise" data-modal="5">
+  <div class="container franchise__container">
+    <svg
+      class="modal__close-icon modal__close-btn js-modal-close"
+      width="20"
+      height="20"
+    >
+      <use href="./images/sprite.svg#icon-close-cross"></use>
+    </svg>
+    <form class="franchise__form">
+      <strong class="franchise__heading heading"
+        >Thank you for your interest in owning an Ice Cream shop</strong
+      >
+      <p class="franchise__description">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <label class="franchise__label">
+        <input
+          class="franchise__input"
+          type="text"
+          required
+          name="franchise-name "
+          placeholder="Name"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
+        />
+      </label>
+      <label class="franchise__label">
+        <input
+          class="franchise__input"
+          type="tel"
+          required
+          name="franchise-phone"
+          placeholder="Phone"
+          pattern="\+?[0-9\s\-\(\)]+"
+          title="Userphone must include [0-9] numbers."
+        />
+      </label>
+      <label class="franchise__label">
+        <input
+          class="franchise__input"
+          type="email"
+          required
+          name="franchise-email "
+          placeholder="Email"
+          title="Useremail must include '@' symbol."
+        />
+      </label>
+      <label class="franchise__label franchise__label--mb">
+        <textarea
+          class="buy-now__comment"
+          name="buy-now-comment"
+          rows="7"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="franchise__btn btn" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
